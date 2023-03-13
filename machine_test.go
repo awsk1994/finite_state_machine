@@ -42,5 +42,5 @@ func TestCustomBuilder(t *testing.T) {
 	m.Fire("e1")
 	m.Fire("e3")
 	m.Fire("e2")
-	m.Fire("XXX")
+	m.Fire("XXX")	// This type of machine does not throw error, but rather sends alerts to user
 }

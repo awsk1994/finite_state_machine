@@ -13,6 +13,7 @@ see machine_test.go
 * basic abstraction for State and Event (can be expanded for future functionalities)
 
 ## Future TODO
-
+* Add more comments
 * Project structure fix
 * Add more features to Event, State
+* Implement dummy code in AlertMachine
