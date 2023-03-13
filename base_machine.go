@@ -6,13 +6,13 @@ import (
 )
 
 type BaseMachine struct {
-	Transitions  map[State]Transition
+	transitions  map[State]Transition
 	currentState State
 }
 
 func NewBaseMachine(transitions map[State]Transition, currentState State) *BaseMachine {
 	return &BaseMachine{
-		Transitions:  transitions,
+		transitions:  transitions,
 		currentState: currentState,
 	}
 }
@@ -31,5 +31,5 @@ func (m BaseMachine) CurrentState() State {
 }
 
 func (m BaseMachine) currentEvents() Transition {
-	return m.Transitions[m.currentState]
+	return m.transitions[m.currentState]
 }
