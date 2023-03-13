@@ -15,7 +15,7 @@ func NewAlertMachine(transitions map[State]Transition, currentState State) *Aler
 
 func (m *AlertMachine) Fire(event string) error {
 	if err := m.BaseMachine.Fire(event); err != nil {
-		fmt.Printf(">> Sending alert to user, err=%v\n", err)		// Simulate Alert
+		fmt.Printf(">> Sending alert to user, err=%v\n", err) // Simulate Alert
 	}
 	return nil
 }
